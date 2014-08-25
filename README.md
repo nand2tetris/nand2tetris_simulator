@@ -225,6 +225,7 @@ throwable may be caught by the calling method but must be rethrown.
 
 For convenience, the following constants are provided by the
 Hack.VMEmulator.BuiltInVMClass for use by the classes which extend it:
+```
 short SCREEN_START_ADDRESS
 short SCREEN_END_ADDRESS
 int SCREEN_WIDTH
@@ -234,6 +235,7 @@ short HEAP_END_ADDRESS
 short KEYBOARD_ADDRESS
 short NEWLINE_KEY
 short BACKSPACE_KEY
+```
 
 Finally, it should be noted that the Java language does not allow the
 declaration of a method called "new" (such as the String.new and Array.new
