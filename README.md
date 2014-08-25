@@ -25,29 +25,29 @@ Contents
 Directory Structure and Compilation Instructions:
 -------------------------------------------------
 
-InstallDir - the installation directory of the software suite
+ * InstallDir - the installation directory of the software suite
              (to which the compiled code should be copied)
 
-HackPackageSource - should be compiled and zipped into Hack.jar and
+ * HackPackageSource - should be compiled and zipped into Hack.jar and
                     coppied to InstallDir/bin/lib
 
-HackGUIPackageSource - should be compiled and zipped into HackGUI.jar and
+ * HackGUIPackageSource - should be compiled and zipped into HackGUI.jar and
                        coppied to InstallDir/bin/lib
 
-CompilersPackageSource - should be compiled and zipped into Compilers.jar and
+ * CompilersPackageSource - should be compiled and zipped into Compilers.jar and
                          coppied to InstallDir/bin/lib
 
-SimulatorsPackageSource - should be compiled and zipped into Simulators.jar and
+ * SimulatorsPackageSource - should be compiled and zipped into Simulators.jar and
                           coppied to InstallDir/bin/lib
 
-SimulatorsGUIPackageSource - should be compiled and zipped into
+ * SimulatorsGUIPackageSource - should be compiled and zipped into
                              SimulatorsGUI.jar and coppied to InstallDir/bin/lib
 
-BuiltInChipsSource - should be compiled and copied to InstallDir/builtInChips
+ * BuiltInChipsSource - should be compiled and copied to InstallDir/builtInChips
 
-BuiltInVMCodeSource - should be compiled and copied to InstallDir/builtInVMCode
+ * BuiltInVMCodeSource - should be compiled and copied to InstallDir/builtInVMCode
 
-MainClassesSource - should be compiled and copied to InstallDir/bin/classes
+ * MainClassesSource - should be compiled and copied to InstallDir/bin/classes
 
 
 The Chip API for Implementation of Chips in Java
@@ -83,9 +83,9 @@ Software Suite are located under the InstallDir/builtInChips directory).
 The chip class should extend (either directly or indirectly) the
 Hack.Gates.BuiltInGate class and may overwrite any of the following three
 methods (which by default do nothing):
-void clockUp() - called when the clock goes up (useful for clocked chips)
-void clockDown() - called when the clock goes down (useful for clocked chips)
-void reCompute() - called whenever any of the input pins changes
+ * `void clockUp()` - called when the clock goes up (useful for clocked chips)
+ * `void clockDown()` - called when the clock goes down (useful for clocked chips)
+ * `void reCompute()` - called whenever any of the input pins changes
                    (useful for combinatorial chips)
 Required initialization code may be placed in a constructor accepting no
 arguments and any number of data members may be defined.
@@ -172,6 +172,7 @@ under the InstallDir/builtInVMCode directory).
 A Java static method which implements a VM function may communiate with the
 Virual Machine using any of the following static methods which it inherits from
 Hack.VMEmulator.BuiltInVMClass:
+
 short readMemory(int address) - returns the value stored in the VM
                                 memory at the given address (the address
                                 argument is an int and not a short for
