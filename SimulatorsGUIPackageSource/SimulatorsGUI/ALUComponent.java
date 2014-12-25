@@ -120,7 +120,7 @@ public class ALUComponent extends JPanel implements ALUGUI{
     }
 
     /**
-     * Enabling and diabling user inputs. those methods aren't implemented
+     * Enabling and disabling user inputs. those methods aren't implemented
      * because in the ALU the text fields are always disabled.
      */
     public void disableUserInput() {}
@@ -188,7 +188,7 @@ public class ALUComponent extends JPanel implements ALUGUI{
     }
 
     /**
-     * Hides all highlightes.
+     * Hides all highlights.
      */
     public void hideHighlight() {
         location0.setDisabledTextColor(Color.black);

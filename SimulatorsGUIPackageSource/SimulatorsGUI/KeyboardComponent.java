@@ -45,7 +45,7 @@ public class KeyboardComponent extends JPanel implements KeyboardGUI {
     }
 
     /**
-     * Displayes the given key name.
+     * Displays the given key name.
      */
     public void setKey(String keyName) {
         keyNameText.setText(keyName);

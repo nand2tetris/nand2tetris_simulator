@@ -25,7 +25,7 @@ import java.util.*;
  * This is the abstract base class for all interactive computer parts.
  * This computer part notifies its listeners on errors using the ComputerPartErrorEvent.
  * It also listens to ComputerPartGUIErrorEvents from the GUI (and therefore should register
- * as a ComputerPartGUIErrorEventlistener to it). When such an event occures,
+ * as a ComputerPartGUIErrorEventlistener to it). When such an event occurs,
  * the error is sent to the error listeners of the computer part itself.
  */
 public abstract class InteractiveComputerPart extends ComputerPart
@@ -58,7 +58,7 @@ public abstract class InteractiveComputerPart extends ComputerPart
     }
 
     /**
-     * Notifies all the ComputerPartErrorEventListeners on an error that occured in the
+     * Notifies all the ComputerPartErrorEventListeners on an error that occurred in the
      * computer part by creating a ComputerPartErrorEvent (with the error message)
      * and sending it using the computerPartErrorOccured method to all the listeners.
      */
@@ -80,7 +80,7 @@ public abstract class InteractiveComputerPart extends ComputerPart
     }
 
     /**
-     * Called when an error occured in the GUI.
+     * Called when an error occurred in the GUI.
      * The event contains the source object and the error message.
      */
     public void errorOccured(ErrorEvent event) {

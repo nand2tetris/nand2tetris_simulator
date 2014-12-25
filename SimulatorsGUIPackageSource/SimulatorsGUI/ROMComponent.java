@@ -266,7 +266,7 @@ public class ROMComponent extends PointedMemoryComponent implements ROMGUI {
 
 
     /**
-     * Implemeting the action of changing the selected item in the combo box
+     * Implementing the action of changing the selected item in the combo box
      */
     public void romFormat_actionPerformed(ActionEvent e) {
         String newFormat = (String)romFormat.getSelectedItem();
@@ -285,7 +285,7 @@ public class ROMComponent extends PointedMemoryComponent implements ROMGUI {
     }
 
     /**
-     * An inner class which implemets the cell renderer of the rom table,
+     * An inner class which implements the cell renderer of the rom table,
      * giving the feature of coloring the background of a specific cell.
      */
     public class ROMTableCellRenderer extends PointedMemoryTableCellRenderer {

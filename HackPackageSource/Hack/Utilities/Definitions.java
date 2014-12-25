@@ -132,27 +132,27 @@ public class Definitions {
     // pointers addresses
 
     /**
-     * The address of the SP regsiter
+     * The address of the SP register
      */
     public static final short SP_ADDRESS = 0;
 
     /**
-     * The address of the LOCAL regsiter
+     * The address of the LOCAL register
      */
     public static final short LOCAL_POINTER_ADDRESS = 1;
 
     /**
-     * The address of the ARG regsiter
+     * The address of the ARG register
      */
     public static final short ARG_POINTER_ADDRESS = 2;
 
     /**
-     * The address of the THIS regsiter
+     * The address of the THIS register
      */
     public static final short THIS_POINTER_ADDRESS = 3;
 
     /**
-     * The address of the THAT regsiter
+     * The address of the THAT register
      */
     public static final short THAT_POINTER_ADDRESS = 4;
 
@@ -253,7 +253,7 @@ public class Definitions {
     public final static String SCREEN_NAME = "SCREEN";
 
     /**
-     * The name of the keybaord assembly symbol
+     * The name of the keyboard assembly symbol
      */
     public final static String KEYBOARD_NAME = "KBD";
 
@@ -268,7 +268,7 @@ public class Definitions {
     public final static String LOCAL_POINTER_NAME = "LCL";
 
     /**
-     * The name of the argumet register assembly symbol
+     * The name of the argument register assembly symbol
      */
     public final static String ARG_POINTER_NAME = "ARG";
 

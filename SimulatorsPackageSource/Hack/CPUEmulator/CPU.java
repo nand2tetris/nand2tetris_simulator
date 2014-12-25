@@ -51,7 +51,7 @@ public class CPU
     // The time that passed since the program started running.
     protected long time;
 
-    // An assembler transltor
+    // An assembler translator
     protected HackAssemblerTranslator assemblerTranslator;
 
     /**

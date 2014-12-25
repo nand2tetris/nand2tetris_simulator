@@ -95,7 +95,7 @@ public class TitledComboBox extends JPanel {
     }
 
     /**
-     * Return true if the given item is the slected one.
+     * Return true if the given item is the selected one.
      */
     public boolean isSelectedItem(String item) {
         return combo.getSelectedItem().equals(item);

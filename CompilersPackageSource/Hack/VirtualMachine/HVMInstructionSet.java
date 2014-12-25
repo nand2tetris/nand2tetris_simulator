@@ -32,7 +32,7 @@ public class HVMInstructionSet {
     public static final byte ADD_CODE = 1;
 
     /**
-     * Substract instruction code
+     * Subtract instruction code
      */
     public static final byte SUBSTRACT_CODE = 2;
 
@@ -122,7 +122,7 @@ public class HVMInstructionSet {
     public static final String ADD_STRING = "add";
 
     /**
-     * Substract instruction string
+     * Subtract instruction string
      */
     public static final String SUBSTRACT_STRING = "sub";
 
@@ -314,7 +314,7 @@ public class HVMInstructionSet {
     // the translation table from segment VM strings to hardware pointer names.
     private Hashtable segmentPointerStrings;
 
-    // Constructs the singlton HVMInstructionSet
+    // Constructs the singleton HVMInstructionSet
     private HVMInstructionSet() {
         instance = this;
         initInstructions();

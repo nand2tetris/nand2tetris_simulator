@@ -44,7 +44,7 @@ public class Graph {
      * Adds an edge between the source and target objects.
      * If the source or target objects don't exist yet in the graph, they will be added
      * automatically.
-     * If the edge aleardy exists, nothing will happen.
+     * If the edge already exists, nothing will happen.
      */
     public void addEdge(Object source, Object target) {
         checkExistence(source);

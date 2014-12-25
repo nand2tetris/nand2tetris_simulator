@@ -185,7 +185,7 @@ public class RegisterComponent extends JPanel implements RegisterGUI {
     }
 
     /**
-     * Hides all highlightes.
+     * Hides all highlights.
      */
     public void hideHighlight() {
         registerValue.setForeground(Color.black);

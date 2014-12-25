@@ -25,7 +25,7 @@ import Hack.ComputerParts.*;
  */
 public class ALU extends ValueComputerPart {
 
-    // The amount of miliseconds that the ALU will flash when computing its value.
+    // The amount of milliseconds that the ALU will flash when computing its value.
     private static final int BODY_FLASH_TIME = 500;
     private static final int COMMAND_FLASH_TIME = 500;
 
@@ -35,7 +35,7 @@ public class ALU extends ValueComputerPart {
     // The output of the ALU
     private short output;
 
-    // The dscription of the command
+    // The description of the command
     private String commandDescription;
 
     // The gui of the ALU

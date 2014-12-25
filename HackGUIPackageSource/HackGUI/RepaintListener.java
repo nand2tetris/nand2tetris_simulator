@@ -24,7 +24,7 @@ package HackGUI;
 public interface RepaintListener {
 
     /**
-     * Called when the object calles to its repaint() method.
+     * Called when the object calls to its repaint() method.
      * There is no event in this case.
      */
     public void repaintSegments();

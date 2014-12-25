@@ -64,7 +64,7 @@ public class BuiltInFunctionsRunner implements Runnable {
 	/********************** Code common to both threads *****/
 
 	/**
-	 * Relinquises control to the other thread until it relinquishes back.
+	 * Relinquishes control to the other thread until it relinquishes back.
 	 * Invariant: at any given time one of the threads is waiting here.
 	 */
 	private synchronized void continueOtherThread() {
@@ -234,7 +234,7 @@ public class BuiltInFunctionsRunner implements Runnable {
 			while (true) {
 				try {
 					// Tell the VM Emulator that we finished init
-					// by issueing a request for calling a "null function" -
+					// by issuing a request for calling a "null function" -
 					// The emulator expects us to tell it we finished init
 					// and will ignore the actual function call request and
 					// continue as normal.
@@ -312,7 +312,7 @@ public class BuiltInFunctionsRunner implements Runnable {
 	/**
 	 * Makes sure an address that a built-in function requested
 	 * to write/read from is legal. If not - notifies the vm emulator
-	 * Thread that an exception occured, waits for a signal from it and
+	 * Thread that an exception occurred, waits for a signal from it and
 	 * throws a TerminateVMProgramThrowable.
 	 */
 	private void checkMemoryAddress(short address) throws TerminateVMProgramThrowable {
@@ -328,7 +328,7 @@ public class BuiltInFunctionsRunner implements Runnable {
 	}
 
 	/**
-	 * Called by a built-in functio through the BuiltInVMClass class.
+	 * Called by a built-in function through the BuiltInVMClass class.
 	 * Enters an infinite loop, de-facto halting the program.
 	 * Important so that tests and other scripts finish counting
 	 * (since a built-in infinite loop doesn't count as steps).

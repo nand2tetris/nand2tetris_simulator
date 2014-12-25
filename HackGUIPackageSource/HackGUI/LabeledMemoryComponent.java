@@ -23,7 +23,7 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * This class represents a memomy component with additional feature of another
+ * This class represents a memory component with additional feature of another
  * column representing the labels of this memory component.
  */
 public class LabeledMemoryComponent extends PointedMemoryComponent implements LabeledPointedMemoryGUI{
@@ -85,7 +85,7 @@ public class LabeledMemoryComponent extends PointedMemoryComponent implements La
     }
 
     /**
-     * hides all existing falsh label.
+     * hides all existing flash label.
      */
     public void hideLabelFlash() {
         labelFlashIndex = -1;
@@ -170,7 +170,7 @@ public class LabeledMemoryComponent extends PointedMemoryComponent implements La
 
     }
 
-    // An inner class which implemets the cell renderer of the VMMemoryComponent.
+    // An inner class which implements the cell renderer of the VMMemoryComponent.
     public class LabeledPointedMemoryTableCellRenderer extends PointedMemoryTableCellRenderer {
 
         public void setRenderer(int row, int column) {

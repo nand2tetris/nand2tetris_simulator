@@ -20,7 +20,7 @@ package Hack.Gates;
 import java.awt.*;
 
 /**
- * An interface for the GUI of the GatesPanel. GUIs of the vairous gates are added to
+ * An interface for the GUI of the GatesPanel. GUIs of the various gates are added to
  * this panel.
  */
 public interface GatesPanelGUI {

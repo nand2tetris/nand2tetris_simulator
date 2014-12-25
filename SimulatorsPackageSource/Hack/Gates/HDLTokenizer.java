@@ -120,7 +120,7 @@ public class HDLTokenizer {
 
     /**
      * Advances the parser to the next token
-     * if has no more toekns, throws an exception.
+     * if has no more tokens, throws an exception.
      */
     public void advance() throws HDLException {
         if (!hasMoreTokens())

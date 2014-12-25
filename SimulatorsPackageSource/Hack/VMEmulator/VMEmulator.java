@@ -90,7 +90,7 @@ public class VMEmulator extends HackSimulator
         ram.addErrorListener(this);
         ram.reset();
 
-        // assignes the memory segments
+        // assigns the memory segments
         AbsolutePointedMemorySegment stackSegment =
             new AbsolutePointedMemorySegment(ram, null);
         TrimmedAbsoluteMemorySegment workingStackSegment =
@@ -201,7 +201,7 @@ public class VMEmulator extends HackSimulator
         ramGUI.setLabel(Definitions.R14_ADDRESS, Definitions.R14_NAME);
         ramGUI.setLabel(Definitions.R15_ADDRESS, Definitions.R15_NAME);
 
-        // assignes the memory segments
+        // assignors the memory segments
         AbsolutePointedMemorySegment stackSegment =
             new AbsolutePointedMemorySegment(ram, gui.getStack());
         TrimmedAbsoluteMemorySegment workingStackSegment =
@@ -621,7 +621,7 @@ public class VMEmulator extends HackSimulator
     }
 
     /**
-     * Called when an error occured in a computer part.
+     * Called when an error occurred in a computer part.
      * The event contains the source object and the error message.
      */
     public void computerPartErrorOccured(ComputerPartErrorEvent event) {

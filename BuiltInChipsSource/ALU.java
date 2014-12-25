@@ -33,15 +33,15 @@ import Hack.Assembler.*;
 /*        if (f=1) out = d + m       //  integer 2s complement addition
 /*        else     out = d & m       //  bitwise "and"
 /*        if (no=1) out = !out       //  bitwise negation
-/*        if (out=0) zr=1 else zr=0  //  comparision is 16-bit equality
-/*        if (out<0) ng=1 else ng=0  //  comparision in 2s-complement
+/*        if (out=0) zr=1 else zr=0  //  comparison is 16-bit equality
+/*        if (out<0) ng=1 else ng=0  //  comparison in 2s-complement
  */
 public class ALU extends BuiltInGateWithGUI {
 
     // The gui;
     private ALUComponent gui;
 
-    // An assembler transltor
+    // An assembler translator
     protected HackAssemblerTranslator assemblerTranslator;
 
     /**

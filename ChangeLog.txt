@@ -56,7 +56,7 @@ Added: Upon a compilation failure on a file, the compilation process does not
        to avoid massive errors upon problems with the subroutine (and not with
        calls).
 
-Added: Upon a compilation error, the generated file is delted. The file is
+Added: Upon a compilation error, the generated file is deleted. The file is
        still generated upon a "link"-style error (error when cross-referencing
        subroutine signatures and calls).
 
@@ -88,7 +88,7 @@ General
 Fixed: .bat/.sh files used to launch the programs now work also when activated
        from a prompt from a different directory. These files also now work
        correctly when there's a file name with spaces in the classpath
-       (like when the JRE on windows was intalled into "Program Files").
+       (like when the JRE on windows was installed into "Program Files").
 
 Fixed: In all simulator/emulators, the while command now behaves as it should.
        Previously the body of the while was ignored which resulted in a
@@ -177,7 +177,7 @@ Fixed: The binary input component now appears in the correct location with
        being updated - this is now fixed with a new behaviour which has the
        same feel as the decimal input: clicking on another input pin now closes
        a visible binary input component while double clicking on another
-       input pni now opens the binary input component for that pin. Also enter
+       input pin now opens the binary input component for that pin. Also enter
        and escape presses now correspond to pressing the ok/cancel buttons
        to complete the correct feel for this component.
 
@@ -258,7 +258,7 @@ Added: Error when calling a function or constructor of a known (passed to the
 Added: Error when calling a method of a known class as a function/
        constructor.
 
-Added: Error when calling a non-existant function/method/constructor of
+Added: Error when calling a non-existent function/method/constructor of
        a known class.
 
 Added: Error when declaring two subroutines (of any kinds) of the same name

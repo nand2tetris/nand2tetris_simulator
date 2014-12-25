@@ -249,7 +249,7 @@ public class PinsComponent extends JPanel implements PinsGUI, MouseListener, Pin
     }
 
     /**
-     * Hides all highlightes.
+     * Hides all highlights.
      */
     public void hideHighlight() {
         highlightIndex.removeAllElements();
@@ -553,7 +553,7 @@ public class PinsComponent extends JPanel implements PinsGUI, MouseListener, Pin
         }
     }
 
-    // An inner class which implemets the cell renderer of the pins table, giving
+    // An inner class which implements the cell renderer of the pins table, giving
     // the feature of alignment, flashing and highlighting.
     class PinsTableCellRenderer extends DefaultTableCellRenderer {
 

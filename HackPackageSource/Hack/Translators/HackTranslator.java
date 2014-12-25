@@ -472,7 +472,7 @@ public abstract class HackTranslator implements HackTranslatorEventListener, Act
     }
 
     // Reads a single line from the source, compiles it and writes the result to the
-    // detination.
+    // destination.
     private void singleStep() {
         singleStepLocked = true;
 

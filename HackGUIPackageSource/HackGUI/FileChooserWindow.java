@@ -24,7 +24,7 @@ import java.util.Vector;
 import javax.swing.filechooser.FileFilter;
 
 /**
- * This class repersents the GUI of the component which allows the user to load
+ * This class represents the GUI of the component which allows the user to load
  * a certain file.
  */
 public class FileChooserWindow extends JFrame implements EnterPressedListener {

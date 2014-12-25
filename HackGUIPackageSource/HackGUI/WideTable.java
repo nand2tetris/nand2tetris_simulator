@@ -22,7 +22,7 @@ import javax.swing.table.*;
 import java.awt.*;
 
 /**
- * A table with a pre-determind width.
+ * A table with a pre-determined width.
  */
 public class WideTable extends JTable {
 

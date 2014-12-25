@@ -23,12 +23,12 @@ package HackGUI;
 public interface MemoryChangeListener {
 
     /**
-     * Called when the a change occured in the memory that requires repaint.
+     * Called when the a change occurred in the memory that requires repaint.
      */
     public void repaintChange();
 
     /**
-     * Called when the a change occured in the memory that requires revalidate.
+     * Called when the a change occurred in the memory that requires revalidate.
      */
     public void revalidateChange();
 }

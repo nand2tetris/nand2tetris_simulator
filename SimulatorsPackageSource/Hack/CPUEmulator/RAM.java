@@ -25,7 +25,7 @@ import Hack.ComputerParts.*;
  */
 public class RAM extends PointedMemory
 {
-    // The amount of miliseconds that a label should flash.
+    // The amount of milliseconds that a label should flash.
     private static final int LABEL_FLASH_TIME = 500;
 
     private static final short[] emptyScreen = new short[Definitions.SCREEN_SIZE_IN_WORDS];
@@ -111,7 +111,7 @@ public class RAM extends PointedMemory
     }
 
     /**
-     * Clears the contenets of the screen.
+     * Clears the contents of the screen.
      */
     public void clearScreen() {
         setContents(emptyScreen, Definitions.SCREEN_START_ADDRESS);
