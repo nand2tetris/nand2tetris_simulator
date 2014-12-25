@@ -17,7 +17,6 @@
 
 package Hack.CPUEmulator;
 
-import java.awt.event.*;
 import javax.swing.*;
 import Hack.ComputerParts.*;
 

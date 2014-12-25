@@ -20,7 +20,6 @@ package Hack.VMEmulator;
 import java.util.*;
 import Hack.Utilities.*;
 import java.io.*;
-import Hack.Utilities.*;
 import Hack.Events.*;
 import Hack.ComputerParts.*;
 import Hack.Controller.*;

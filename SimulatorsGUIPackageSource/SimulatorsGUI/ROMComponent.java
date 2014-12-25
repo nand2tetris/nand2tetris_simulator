@@ -26,7 +26,6 @@ import java.util.Vector;
 import java.awt.event.*;
 import java.awt.*;
 import javax.swing.filechooser.FileFilter;
-import javax.swing.table.*;
 import java.io.*;
 import Hack.Assembler.*;
 

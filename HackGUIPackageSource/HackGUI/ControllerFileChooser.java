@@ -21,7 +21,6 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.Vector;
-import java.io.*;
 
 /**
  * This class repersents the GUI of the component which allows the user to load

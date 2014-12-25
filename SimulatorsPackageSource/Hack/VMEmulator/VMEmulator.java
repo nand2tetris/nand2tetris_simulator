@@ -22,7 +22,6 @@ import Hack.ComputerParts.*;
 import Hack.Utilities.*;
 import Hack.Controller.*;
 import Hack.Events.*;
-import Hack.Utilities.*;
 import Hack.CPUEmulator.*;
 import Hack.VirtualMachine.*;
 

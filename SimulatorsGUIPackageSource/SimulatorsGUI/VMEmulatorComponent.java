@@ -226,7 +226,7 @@ public class VMEmulatorComponent extends HackSimulatorComponent implements VMEmu
         segments.getTempSegment().setMemoryComponent(ram);
         stack.setMemoryComponent(ram);
         workingStack.setMemoryComponent(ram);
-        //registers the segments to listen to the repain event of the ram.
+        //registers the segments to listen to the repaint event of the ram.
         ram.addChangeListener(segments.getStaticSegment());
         ram.addChangeListener(segments.getLocalSegment());
         ram.addChangeListener(segments.getArgSegment());
