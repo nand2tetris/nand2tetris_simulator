@@ -26,6 +26,6 @@ public interface GateErrorEventListener {
      * Called when an error occurred in a gate.
      * The event contains the source object and the error message.
      */
-    public void gateErrorOccured(GateErrorEvent event);
+    public void gateErrorOccurred(GateErrorEvent event);
 
 }

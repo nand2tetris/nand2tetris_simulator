@@ -84,7 +84,7 @@ public abstract class BuiltInGateWithGUI extends BuiltInGate
         GateErrorEvent event = new GateErrorEvent(this, errorMessage);
 
         for (int i = 0; i < errorListeners.size(); i++)
-            ((GateErrorEventListener)errorListeners.elementAt(i)).gateErrorOccured(event);
+            ((GateErrorEventListener)errorListeners.elementAt(i)).gateErrorOccurred(event);
     }
 
     /**
@@ -94,14 +94,14 @@ public abstract class BuiltInGateWithGUI extends BuiltInGate
         GateErrorEvent event = new GateErrorEvent(this, null);
 
         for (int i = 0; i < errorListeners.size(); i++)
-            ((GateErrorEventListener)errorListeners.elementAt(i)).gateErrorOccured(event);
+            ((GateErrorEventListener)errorListeners.elementAt(i)).gateErrorOccurred(event);
     }
 
     /**
      * Called when an error occurred in the GUI.
      * The event contains the source object and the error message.
      */
-    public void errorOccured(ErrorEvent event) {
+    public void errorOccurred(ErrorEvent event) {
         notifyErrorListeners(event.getErrorMessage());
     }
 

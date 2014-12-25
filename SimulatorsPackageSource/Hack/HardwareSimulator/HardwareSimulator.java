@@ -671,7 +671,7 @@ public class HardwareSimulator extends HackSimulator
      * Called when an error occurred in a computer part.
      * The event contains the source object and the error message.
      */
-    public void computerPartErrorOccured(ComputerPartErrorEvent event) {
+    public void computerPartErrorOccurred(ComputerPartErrorEvent event) {
         displayMessage(event.getErrorMessage(), true);
     }
 
@@ -679,7 +679,7 @@ public class HardwareSimulator extends HackSimulator
      * Called when an error occurred in a gate's component.
      * The event contains the source object and the error message.
      */
-    public void gateErrorOccured(GateErrorEvent event) {
+    public void gateErrorOccurred(GateErrorEvent event) {
         displayMessage(event.getErrorMessage(), true);
     }
 

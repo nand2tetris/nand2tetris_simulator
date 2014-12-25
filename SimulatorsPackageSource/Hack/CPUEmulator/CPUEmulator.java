@@ -406,7 +406,7 @@ public class CPUEmulator extends HackSimulator implements ComputerPartErrorEvent
      * Called when an error occurred in a computer part.
      * The event contains the source computer part and the error message.
      */
-    public void computerPartErrorOccured(ComputerPartErrorEvent event) {
+    public void computerPartErrorOccurred(ComputerPartErrorEvent event) {
         displayMessage(event.getErrorMessage(), true);
     }
 

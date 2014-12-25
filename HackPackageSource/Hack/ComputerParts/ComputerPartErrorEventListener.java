@@ -26,6 +26,6 @@ public interface ComputerPartErrorEventListener {
      * Called when an error occurred in the ComputerPart.
      * The event contains the source object and the error message.
      */
-    public void computerPartErrorOccured(ComputerPartErrorEvent event);
+    public void computerPartErrorOccurred(ComputerPartErrorEvent event);
 
 }
