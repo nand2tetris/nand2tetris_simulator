@@ -162,7 +162,7 @@ public class HackController
     private VariableFormat[] varList;
 
     // The current breakpoints list
-    private Vector breakpoints;
+    private Vector<Breakpoint> breakpoints;
 
     // The current compared and output lines
     private int compareLinesCounter, outputLinesCounter;
@@ -225,7 +225,7 @@ public class HackController
         animationMode = NO_DISPLAY_CHANGES;
         simulator.setAnimationMode(animationMode);
         simulator.addListener(this);
-        breakpoints = new Vector();
+        breakpoints = new Vector<Breakpoint>();
 
         try {
             loadNewScript(file, false);
@@ -257,7 +257,7 @@ public class HackController
         setNumericFormatTask = new SetNumericFormatTask();
         simulator.addListener(this);
         simulator.addProgramListener(this);
-        breakpoints = new Vector();
+        breakpoints = new Vector<Breakpoint>();
 
         defaultScriptFile = new File(defaultScriptName);
         loadNewScript(defaultScriptFile, false);
@@ -811,8 +811,8 @@ public class HackController
     }
 
     // Sets the breakpoints list with the given one.
-    private void setBreakpoints(Vector newBreakpoints) {
-        breakpoints = new Vector();
+    private void setBreakpoints(Vector<Breakpoint> newBreakpoints) {
+        breakpoints = new Vector<Breakpoint>();
 
         // Make sure there's no duplicate breakpoints
         for (int i = 0; i < newBreakpoints.size(); i++) {
@@ -824,7 +824,7 @@ public class HackController
     }
 
     // Returns true if the given breakpoint exists in the given breakpoints vector.
-    private boolean breakpointExists(Vector breakpoints, Breakpoint breakpoint) {
+    private boolean breakpointExists(Vector<Breakpoint> breakpoints, Breakpoint breakpoint) {
         boolean found = false;
         for (int j = 0; j < breakpoints.size() && !found; j++) {
             Breakpoint scannedBreakpoint = (Breakpoint)breakpoints.elementAt(j);

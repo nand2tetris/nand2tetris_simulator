@@ -27,7 +27,7 @@ public abstract class InteractiveValueComputerPart extends ValueComputerPart
  implements ComputerPartEventListener, ErrorEventListener {
 
     // Error listeners of hi computer prt
-    private Vector errorListeners;
+    private Vector<ComputerPartErrorEventListener> errorListeners;
 
     // The excepted range of numbers
     private short minValue, maxValue;
@@ -45,7 +45,7 @@ public abstract class InteractiveValueComputerPart extends ValueComputerPart
     public InteractiveValueComputerPart(boolean hasGUI) {
         super(hasGUI);
 
-        errorListeners = new Vector();
+        errorListeners = new Vector<ComputerPartErrorEventListener>();
         this.minValue = -32768;
         this.maxValue = 32767;
 
@@ -60,7 +60,7 @@ public abstract class InteractiveValueComputerPart extends ValueComputerPart
     public InteractiveValueComputerPart(boolean hasGUI, short minValue, short maxValue) {
         super(hasGUI);
 
-        errorListeners = new Vector();
+        errorListeners = new Vector<ComputerPartErrorEventListener>();
         this.minValue = minValue;
         this.maxValue = maxValue;
     }

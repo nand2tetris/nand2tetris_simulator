@@ -38,10 +38,10 @@ public class Script {
     public static final int MAX_OUTPUT_LIST_ARGUMENTS = 20;
 
     // The list of commands
-    private Vector commands;
+    private Vector<Command> commands;
 
     // The list of script line numbers that match the corresponding command
-    private Vector lineNumbers;
+    private Vector<Integer> lineNumbers;
 
     // The file name of the script
     private String scriptName;
@@ -63,8 +63,8 @@ public class Script {
             throw new ScriptException("Script " + scriptName + " not found");
         }
 
-        commands = new Vector();
-        lineNumbers = new Vector();
+        commands = new Vector<Command>();
+        lineNumbers = new Vector<Integer>();
         buildScript();
     }
 

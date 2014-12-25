@@ -105,10 +105,10 @@ public class ScriptTokenizer {
     private StreamTokenizer parser;
 
     // Hashtable containing the keywords of the language
-    private Hashtable keywords;
+    private Hashtable<String, Integer> keywords;
 
     // Hashtable containing the symbols of the language
-    private Hashtable symbols;
+    private Hashtable<String, String> symbols;
 
     // The type of the current token
     private int tokenType;
@@ -267,7 +267,7 @@ public class ScriptTokenizer {
 
     // Initializes the keywords hashtable
     private void initKeywords() {
-        keywords = new Hashtable();
+        keywords = new Hashtable<String, Integer>();
         keywords.put("output-file",new Integer(KW_OUTPUT_FILE));
         keywords.put("compare-to",new Integer(KW_COMPARE_TO));
         keywords.put("output-list",new Integer(KW_OUTPUT_LIST));
@@ -282,7 +282,7 @@ public class ScriptTokenizer {
 
     // Initializes the symbols hashtable
     private void initSymbols() {
-        symbols = new Hashtable();
+        symbols = new Hashtable<String,String>();
         symbols.put("{","{");
         symbols.put("}","}");
         symbols.put(",",",");

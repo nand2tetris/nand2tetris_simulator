@@ -393,7 +393,7 @@ public class Definitions {
     private static Definitions instance;
 
     // the translation table from pointer names to addresses
-    private Hashtable addresses;
+    private Hashtable<String, Short> addresses;
 
     // translation table for action key codes
     private short[] actionKeyCodes;
@@ -449,8 +449,8 @@ public class Definitions {
     /**
      * Returns the translation table from pointer names to addresses.
      */
-    public Hashtable getAddressesTable() {
-        return (Hashtable)addresses.clone();
+    public Hashtable<String, Short> getAddressesTable() {
+        return (Hashtable<String, Short>) addresses.clone();
     }
 
     /**
@@ -494,7 +494,7 @@ public class Definitions {
 
     // initializes address translation table
     private void initAddresses() {
-        addresses = new Hashtable();
+        addresses = new Hashtable<String,Short>();
         addresses.put(SP_NAME,new Short(SP_ADDRESS));
         addresses.put(LOCAL_POINTER_NAME,new Short(LOCAL_POINTER_ADDRESS));
         addresses.put(ARG_POINTER_NAME,new Short(ARG_POINTER_ADDRESS));

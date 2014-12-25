@@ -89,7 +89,7 @@ public abstract class HackTranslator implements HackTranslatorEventListener, Act
     // in the destination. The key is the pc of the source (Integer) and
     // the value is an int array of length 2, containing start and end pc of the destination
     // file.
-    protected Hashtable compilationMap;
+    protected Hashtable<Integer, int[]> compilationMap;
 
     // true only in the process of full compilation
     protected boolean inFullCompilation;
@@ -239,7 +239,7 @@ public abstract class HackTranslator implements HackTranslatorEventListener, Act
      * Restarts the compilation from the beginning of the source.
      */
     protected void restartCompilation() {
-        compilationMap = new Hashtable();
+        compilationMap = new Hashtable<Integer, int[]>();
         sourcePC = 0;
         destPC = 0;
 
@@ -262,8 +262,8 @@ public abstract class HackTranslator implements HackTranslatorEventListener, Act
     // Loads the given source file and displays it in the Source GUI
     private void loadSource(String fileName) throws HackTranslatorException {
         String line;
-        Vector formattedLines = new Vector();
-        Vector lines = null;
+        Vector<String> formattedLines = new Vector<String>();
+        Vector<String> lines = null;
         String errorMessage = null;
 
         try {
@@ -283,7 +283,7 @@ public abstract class HackTranslator implements HackTranslatorEventListener, Act
             checkSourceFile(fileName);
             sourceFileName = fileName;
 
-            lines = new Vector();
+            lines = new Vector<String>();
             BufferedReader sourceReader = new BufferedReader(new FileReader(sourceFileName));
 
             while((line = sourceReader.readLine()) != null) {
