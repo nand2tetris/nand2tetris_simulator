@@ -25,7 +25,7 @@ import java.awt.*;
 public interface BusGUI extends ComputerPartGUI {
 
     /**
-     * Moves the given value from the source coordinates to the traget coordinates.
+     * Moves the given value from the source coordinates to the target coordinates.
      */
     public void move(Point sourceCoordinates, Point targetCoordinates, String value);
 

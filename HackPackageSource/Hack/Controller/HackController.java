@@ -28,7 +28,7 @@ import Hack.Events.*;
 
 /**
  * A Controller for HackSimulators. Executes scripts written in a special scripting language
- * that controlls the features of the simulators.
+ * that controls the features of the simulators.
  * Constructed with a GUI that enables the execution control of the script.
  */
 public class HackController
@@ -52,7 +52,7 @@ public class HackController
     // ANIMATION MODES:
 
     /**
-     * Animation mode: Specifies using static display changes - displays value changes staticaly
+     * Animation mode: Specifies using static display changes - displays value changes statically
      */
     public static final int DISPLAY_CHANGES = 0;
 
@@ -63,7 +63,7 @@ public class HackController
 
     /**
      * Animation mode: Specifies using no display changes.
-     * In this mode, the speed has no meening.
+     * In this mode, the speed has no meaning.
      */
     public static final int NO_DISPLAY_CHANGES = 2;
 
@@ -108,7 +108,7 @@ public class HackController
      */
     public static final int NO_ADDITIONAL_DISPLAY = 3;
 
-    // Minimum and maximum mili-seconds per script command execution
+    // Minimum and maximum milli-seconds per script command execution
     private static final int MAX_MS = 2500;
     private static final int MIN_MS = 25;
 
@@ -118,7 +118,7 @@ public class HackController
     // A helper string with spaces
     private static final String SPACES = "                                        ";
 
-    // The contorller's GUI
+    // The controller's GUI
     protected ControllerGUI gui;
 
     // The file of the current script
@@ -143,7 +143,7 @@ public class HackController
     // The program counter
     private int currentCommandIndex;
 
-    // The output desination
+    // The output destination
     private PrintWriter output;
 
     // The comparison source
@@ -675,7 +675,7 @@ public class HackController
         return true;
     }
 
-    // Ouputs the given line into the output file and compares it to the current
+    // Outputs the given line into the output file and compares it to the current
     // compare file (if exists)
     private void outputAndCompare(String line) throws ControllerException {
         output.println(line);

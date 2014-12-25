@@ -21,10 +21,9 @@ import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.Vector;
-import java.io.*;
 
 /**
- * This class repersents the GUI of the component which allows the user to load
+ * This class represents the GUI of the component which allows the user to load
  * three kinds of files into the system: script file, output file and comparison
  * file.
  */

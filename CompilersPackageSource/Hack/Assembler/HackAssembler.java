@@ -24,7 +24,7 @@ import Hack.Utilities.*;
 import Hack.Translators.*;
 
 /**
- * A translator from assmebly (.asm) to hack machine language (.hack)
+ * A translator from assembly (.asm) to hack machine language (.hack)
  */
 public class HackAssembler extends HackTranslator {
 
@@ -37,7 +37,7 @@ public class HackAssembler extends HackTranslator {
     // the symbol table
     private Hashtable symbolTable;
 
-    // The comarison program array
+    // The comparison program array
     private short[] comparisonProgram;
 
     // The HackAssembler translator;
@@ -308,7 +308,7 @@ public class HackAssembler extends HackTranslator {
                     else
                         addCommand(translator.textToCode(line));
                 }
-                else { // try to compile normaly, if error - try to compile as compact assembly
+                else { // try to compile normally, if error - try to compile as compact assembly
                     try {
                         addCommand(translator.textToCode(line));
                     } catch (AssemblerException ae) {

@@ -306,7 +306,7 @@ public class CompositeGateClass extends GateClass {
         else {
             rightType = getPinType(rightName);
 
-            // check that not sub bus of intenral
+            // check that not sub bus of internal
             if ((rightType == UNKNOWN_PIN_TYPE || rightType == INTERNAL_PIN_TYPE) &&
                 !fullRightName.equals(rightName))
                     input.HDLError(fullRightName + ": sub bus of an internal node may not be used");
@@ -404,13 +404,13 @@ public class CompositeGateClass extends GateClass {
       The nodes in the graph are:
       1. Internal parts, represented with Integer objects containing the part's numbers.
       2. Input, Output, Internal and special nodes, represented with their PinInfo objects.
-      3. One "master part" node that connects to all the inernal parts, represented with the
+      3. One "master part" node that connects to all the internal parts, represented with the
          partsList vector.
       4. One "master output" node that all output nodes connect to, represented with the
          outputPinsInfo array.
       5. One "master input" node that connects to all input nodes, represented with the
          inputPinsInfo array.
-      Edges are not created between inetrnal nodes and clocked part inputs.
+      Edges are not created between internal nodes and clocked part inputs.
     */
     private Graph createConnectionsGraph() {
         Graph graph = new Graph();
@@ -548,7 +548,7 @@ public class CompositeGateClass extends GateClass {
 
         // First scan: creates internal Nodes (or SubNodes) and their connections to
         // their source part nodes. Also creates the connections between gate's
-        // input or putput nodes and part's input nodes and between part's output nodes and gate's
+        // input or output nodes and part's input nodes and between part's output nodes and gate's
         // output nodes.
         ConnectionSet internalConnections = new ConnectionSet();
         Node partNode, source, target;

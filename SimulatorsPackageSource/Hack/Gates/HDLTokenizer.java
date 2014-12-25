@@ -120,7 +120,7 @@ public class HDLTokenizer {
 
     /**
      * Advances the parser to the next token
-     * if has no more toekns, throws an exception.
+     * if has no more tokens, throws an exception.
      */
     public void advance() throws HDLException {
         if (!hasMoreTokens())
@@ -215,7 +215,7 @@ public class HDLTokenizer {
      * Returns if there are more tokens in the stream
      */
     public boolean hasMoreTokens() {
-        return (parser.ttype != parser.TT_EOF);
+        return (parser.ttype != StreamTokenizer.TT_EOF);
     }
 
     // Initializes the keywords hashtable

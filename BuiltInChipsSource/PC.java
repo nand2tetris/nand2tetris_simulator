@@ -54,7 +54,7 @@ public class PC extends BuiltInGateWithGUI implements ComputerPartEventListener 
     protected void clockUp() {
         short in = inputPins[0].get(); // 16 bit input
         short load = inputPins[1].get(); // load bit
-        short inc = inputPins[2].get(); // incerement bit
+        short inc = inputPins[2].get(); // increment bit
         short reset = inputPins[3].get(); // reset bit
         if (reset == 1)
             value = 0;

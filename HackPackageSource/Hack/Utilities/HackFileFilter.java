@@ -29,7 +29,7 @@ public class HackFileFilter implements FilenameFilter {
     private String extension;
 
     /**
-     * Constucts a new HackFileFilter with the given extension
+     * Constructs a new HackFileFilter with the given extension
      * @param extension The given extension
      */
     public HackFileFilter(String extension) {

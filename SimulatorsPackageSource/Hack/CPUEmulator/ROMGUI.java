@@ -22,7 +22,7 @@ import Hack.Events.*;
 
 /**
  * An interface for a computer ROM GUI, which is a Pointed Memory GUI.
- * Apart from having the usual pointed memory GUI functionallity, the ROM GUI displayes
+ * Apart from having the usual pointed memory GUI functionality, the ROM GUI displays
  * the current program (a .hack file name) and enables the selection of a new program.
  * If a new program is selected, the GUI will notify its listeners on this change.
  * The ROM GUI can also display its contents as an Assembly language instructions.

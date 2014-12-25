@@ -86,7 +86,7 @@ public class ControllerComponent extends JFrame implements ControllerGUI,
     // A combo box which controls the format of all the components.
     protected TitledComboBox formatCombo;
 
-    // A combo box for choosing the additional disply.
+    // A combo box for choosing the additional display.
     protected TitledComboBox additionalDisplayCombo;
 
     // A combo box for choosing the animation type.
@@ -127,7 +127,7 @@ public class ControllerComponent extends JFrame implements ControllerGUI,
         additionalDisplayCombo = new TitledComboBox("View:", "View options",
                                                     new String[]{"Script", "Output", "Compare",
                                                                  "Screen"}, 80);
-        animationCombo = new TitledComboBox("Animate:", "Animtion type",
+        animationCombo = new TitledComboBox("Animate:", "Animation type",
                                             new String[]{"Program flow", "Program & data flow",
                                                          "No animation"}, 135);
         scriptComponent = new FileDisplayComponent();
@@ -519,7 +519,7 @@ public class ControllerComponent extends JFrame implements ControllerGUI,
     }
 
     /**
-     * Adds the menu items to the menuber.
+     * Adds the menu items to the menubar.
      */
     protected void arrangeMenu() {
 
@@ -1137,7 +1137,7 @@ public class ControllerComponent extends JFrame implements ControllerGUI,
     }
 
     /**
-     * Called when the additonal display's "script" menu item was selected.
+     * Called when the additional display's "script" menu item was selected.
      */
     public void scriptDisplayMenuItem_actionPerformed (ActionEvent e) {
         if (!additionalDisplayCombo.isSelectedIndex(HackController.SCRIPT_ADDITIONAL_DISPLAY))
@@ -1145,7 +1145,7 @@ public class ControllerComponent extends JFrame implements ControllerGUI,
     }
 
     /**
-     * Called when the additonal display's "output" menu item was selected.
+     * Called when the additional display's "output" menu item was selected.
      */
     public void outputMenuItem_actionPerformed (ActionEvent e) {
         if (!additionalDisplayCombo.isSelectedIndex(HackController.OUTPUT_ADDITIONAL_DISPLAY))
@@ -1153,7 +1153,7 @@ public class ControllerComponent extends JFrame implements ControllerGUI,
     }
 
     /**
-     * Called when the additonal display's "comparison" menu item was selected.
+     * Called when the additional display's "comparison" menu item was selected.
      */
     public void compareMenuItem_actionPerformed (ActionEvent e) {
         if (!additionalDisplayCombo.isSelectedIndex(HackController.COMPARISON_ADDITIONAL_DISPLAY))
@@ -1161,7 +1161,7 @@ public class ControllerComponent extends JFrame implements ControllerGUI,
     }
 
     /**
-     * Called when the additonal display's "no display" menu item was selected.
+     * Called when the additional display's "no display" menu item was selected.
      */
     public void noAdditionalDisplayMenuItem_actionPerformed (ActionEvent e) {
         if (!additionalDisplayCombo.isSelectedIndex(HackController.NO_ADDITIONAL_DISPLAY))

@@ -20,7 +20,7 @@ package Hack.VirtualMachine;
 /**
  * A Virtual Machine interface. provides an interface for compiling
  * byte code to machine language - every implementation should
- * produce the proper commands for it's architectue.
+ * produce the proper commands for it's architecture.
  * It has 4 types of operations:
  * 1 - Arithmetic commands
  * 2 - Memory access commands
@@ -40,7 +40,7 @@ public interface VirtualMachine {
     public abstract void add();
 
     /**
-     * 2's complement integer substraction (binary operation)
+     * 2's complement integer subtraction (binary operation)
      */
     public abstract void substract();
 
@@ -50,7 +50,7 @@ public interface VirtualMachine {
     public abstract void negate();
 
     /**
-     * Equalaty operation (binary operation). Returns(to the stack)
+     * Equality operation (binary operation). Returns(to the stack)
      * 0xFFFF as true,0x000 as false
      */
     public abstract void equal();

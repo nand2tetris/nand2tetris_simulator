@@ -25,7 +25,7 @@ import java.util.*;
  * A BuiltInGate with a GUI component.
  * Notifies its listeners on errors using the GateErrorEvent.
  * Also listens to ErrorEvents from the GUI (and therefore should register
- * as an ErrorEventListener to it). When such an event occures, the error is sent to
+ * as an ErrorEventListener to it). When such an event occurs, the error is sent to
  * the error listeners of the computer part itself.
  */
 public abstract class BuiltInGateWithGUI extends BuiltInGate
@@ -76,7 +76,7 @@ public abstract class BuiltInGateWithGUI extends BuiltInGate
     }
 
     /**
-     * Notifies all the GateErrorEventListeners on an error that occured in the
+     * Notifies all the GateErrorEventListeners on an error that occurred in the
      * computer part by creating a GateErrorEvent (with the error message) and sending
      * it using the gateErrorOccured method to all the listeners.
      */
@@ -98,7 +98,7 @@ public abstract class BuiltInGateWithGUI extends BuiltInGate
     }
 
     /**
-     * Called when an error occured in the GUI.
+     * Called when an error occurred in the GUI.
      * The event contains the source object and the error message.
      */
     public void errorOccured(ErrorEvent event) {

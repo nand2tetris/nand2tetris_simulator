@@ -70,7 +70,7 @@ public class Connection {
     // The name of the part's pin
     private String partPinName;
 
-    // The bit indice of the parts's sub node (index 0 is low bit and index 1 is high bit)
+    // The bit indice of the part's sub node (index 0 is low bit and index 1 is high bit)
     private byte[] partSubBus;
 
     // The bit indice of the gate's sub node (index 0 is low bit and index 1 is high bit)
@@ -78,7 +78,7 @@ public class Connection {
 
     /**
      * Constructs a connection according to the given type and pin information.
-     * The sub-busses of the gate & part are optional.
+     * The sub-buses of the gate & part are optional.
      */
     public Connection(byte type, int gatePinNumber, int partNumber, String partPinName,
                       byte[] gateSubBus, byte[] partSubBus) {

@@ -26,7 +26,7 @@ import Hack.Assembler.*;
 
 /**
  * A Read Only Memory. Has methods for loading a machine language file (.hack) and for
- * setting a pointer (a specific address in the ROM for GUI perposes).
+ * setting a pointer (a specific address in the ROM for GUI purposes).
  */
 public class ROM extends PointedMemory implements ProgramEventListener
 {

@@ -668,7 +668,7 @@ public class HardwareSimulator extends HackSimulator
     }
 
     /**
-     * Called when an error occured in a computer part.
+     * Called when an error occurred in a computer part.
      * The event contains the source object and the error message.
      */
     public void computerPartErrorOccured(ComputerPartErrorEvent event) {
@@ -676,7 +676,7 @@ public class HardwareSimulator extends HackSimulator
     }
 
     /**
-     * Called when an error occured in a gate's component.
+     * Called when an error occurred in a gate's component.
      * The event contains the source object and the error message.
      */
     public void gateErrorOccured(GateErrorEvent event) {

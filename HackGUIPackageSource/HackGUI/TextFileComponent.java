@@ -17,7 +17,6 @@
 
 package HackGUI;
 
-import HackGUI.*;
 import Hack.ComputerParts.*;
 import javax.swing.*;
 import javax.swing.table.*;

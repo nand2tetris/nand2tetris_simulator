@@ -413,7 +413,7 @@ public class ProgramComponent extends JPanel implements VMProgramGUI {
         }
     }
 
-    // An inner class which implemets the cell renderer of the program table, giving
+    // An inner class which implements the cell renderer of the program table, giving
     // the feature of coloring the background of a specific cell.
     class ColoredTableCellRenderer extends DefaultTableCellRenderer {
 

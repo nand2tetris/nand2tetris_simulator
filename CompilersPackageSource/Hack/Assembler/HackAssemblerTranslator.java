@@ -25,7 +25,7 @@ import Hack.Translators.*;
 /**
  * A translation service between the Assembly text and the numeric instruction values.
  * The translation is bidirectional.
- * This is a singlton class.
+ * This is a singleton class.
  */
 public class HackAssemblerTranslator {
 

@@ -17,7 +17,6 @@
 
 package Hack.CPUEmulator;
 
-import java.awt.event.*;
 import javax.swing.*;
 import Hack.ComputerParts.*;
 
@@ -29,7 +28,7 @@ import Hack.ComputerParts.*;
 public interface KeyboardGUI extends ComputerPartGUI {
 
     /**
-     * Displayes the given key name.
+     * Displays the given key name.
      */
     public void setKey(String keyName);
 

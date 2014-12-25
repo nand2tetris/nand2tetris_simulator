@@ -47,7 +47,7 @@ public class BreakpointVariablesWindow extends JFrame {
     private ImageIcon okIcon = new ImageIcon(Utilities.imagesDir + "ok.gif");
     private ImageIcon cancelIcon = new ImageIcon(Utilities.imagesDir + "cancel.gif");
 
-    // A vector conatining the listeners to this component.
+    // A vector containing the listeners to this component.
     private Vector listeners;
 
     // The breakpoint which is being added or changed.

@@ -20,7 +20,6 @@ package Hack.VMEmulator;
 import java.util.*;
 import Hack.Utilities.*;
 import java.io.*;
-import Hack.Utilities.*;
 import Hack.Events.*;
 import Hack.ComputerParts.*;
 import Hack.Controller.*;
@@ -191,7 +190,7 @@ public class VMProgram extends InteractiveComputerPart
 				instructionsLength += 1;
 			}
 			short indexInInvisibleCode = 0;
-			// Add a jump to the end (noone should get here since
+			// Add a jump to the end (no one should get here since
 			// both calls to built-in functions indicate that
 			// that this is a function-based program and not a script
 			// a-la proj7, but just to be on the safe side...).

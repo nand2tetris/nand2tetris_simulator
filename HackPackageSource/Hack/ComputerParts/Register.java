@@ -45,7 +45,7 @@ public class Register extends InteractiveValueComputerPart implements ComputerPa
         init(gui);
     }
 
-    // Initalizes the register
+    // Initializes the register
     private void init(RegisterGUI gui) {
         this.gui = gui;
 

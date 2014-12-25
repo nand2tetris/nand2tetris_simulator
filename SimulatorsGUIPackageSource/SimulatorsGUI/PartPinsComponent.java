@@ -245,7 +245,7 @@ public class PartPinsComponent extends PinsComponent implements PartPinsGUI {
         }
     }
 
-    // An inner class which implemets the cell renderer of the pins table, giving
+    // An inner class which implements the cell renderer of the pins table, giving
     // the feature of alignment, flashing and highlighting.
     class PartPinsTableCellRenderer extends DefaultTableCellRenderer {
 

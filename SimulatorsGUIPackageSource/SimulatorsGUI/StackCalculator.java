@@ -148,7 +148,7 @@ public class StackCalculator extends JPanel implements CalculatorGUI {
     }
 
     /**
-     * Hides all highlightes.
+     * Hides all highlights.
      */
     public void hideHighlight() {
         firstInput.setForeground(Color.black);

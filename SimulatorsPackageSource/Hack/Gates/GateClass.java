@@ -216,7 +216,7 @@ public abstract class GateClass {
                 String pinName = input.getIdentifier();
                 list.addElement(pinName);
 
-                // check seperator
+                // check separator
                 input.advance();
                 if (!(input.getTokenType() == HDLTokenizer.TYPE_SYMBOL
                       && (input.getSymbol() == ',' || input.getSymbol() == ';')))

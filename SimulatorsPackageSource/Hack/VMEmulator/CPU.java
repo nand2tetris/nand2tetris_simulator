@@ -277,7 +277,7 @@ public class CPU {
     }
 
     /**
-     * 2's complement integer substraction (binary operation)
+     * 2's complement integer subtraction (binary operation)
      */
     public void substract() throws ProgramException {
         calculate(2, Calculator.SUBTRACT);
@@ -291,7 +291,7 @@ public class CPU {
     }
 
     /**
-     * Equalaty operation (binary operation). Returns(to the stack)
+     * Equality operation (binary operation). Returns(to the stack)
      * 0xFFFF as true,0x0000 as false
      */
     public void equal() throws ProgramException {
@@ -509,7 +509,7 @@ public class CPU {
 											  Definitions.VAR_END_ADDRESS - 1,
 											  true);
 			}
-			program.setPC((short)(returnAddress-1)); // set previousPC currectly
+			program.setPC((short)(returnAddress-1)); // set previousPC correctly
 			program.setPC(returnAddress); // pc = *sp
 		} else {
             error("Illegal return address");

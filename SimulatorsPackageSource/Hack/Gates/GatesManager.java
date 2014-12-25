@@ -80,7 +80,7 @@ public class GatesManager {
     }
 
     /**
-     * Returnss the BuiltIn HDL dir.
+     * Returns the BuiltIn HDL dir.
      */
     public File getBuiltInDir() {
         return builtInDir;

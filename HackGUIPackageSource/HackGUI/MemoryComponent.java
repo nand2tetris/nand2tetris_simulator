@@ -101,7 +101,7 @@ public class MemoryComponent extends JPanel implements MemoryGUI {
     // The start and end row indices of the enabled region.
     protected int startEnabling, endEnabling;
 
-    // If true, the disbaled region is shaded.
+    // If true, the disabled region is shaded.
     protected boolean grayDisabledRange;
 
     /**
@@ -337,7 +337,7 @@ public class MemoryComponent extends JPanel implements MemoryGUI {
     }
 
     /**
-     * Hides all highlightes.
+     * Hides all highlights.
      */
     public void hideHighlight() {
         highlightIndex.removeAllElements();
@@ -687,7 +687,7 @@ public class MemoryComponent extends JPanel implements MemoryGUI {
         nameLbl.setBounds(new Rectangle(3, 7, 150, 23));
     }
 
-    // An inner class which implemets the cell renderer of the memory table, giving
+    // An inner class which implements the cell renderer of the memory table, giving
     // the feature of aligning the text in the cells.
     class MemoryTableCellRenderer extends DefaultTableCellRenderer {
 

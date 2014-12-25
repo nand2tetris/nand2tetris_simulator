@@ -276,7 +276,7 @@ public class MemorySegmentComponent extends JPanel
     }
 
     /**
-     * Hides all highlightes.
+     * Hides all highlights.
      */
     public void hideHighlight() {
         highlightIndex.removeAllElements();
@@ -534,7 +534,7 @@ public class MemorySegmentComponent extends JPanel
         }
     }
 
-    // An inner class which implemets the cell renderer of the memory table, giving
+    // An inner class which implements the cell renderer of the memory table, giving
     // the feature of aligning the text in the cells.
     class MemorySegmentTableCellRenderer extends DefaultTableCellRenderer {
 

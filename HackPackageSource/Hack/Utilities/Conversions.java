@@ -123,7 +123,7 @@ public class Conversions {
 
     /**
      * Returns the binary string representation of the given int value, adding
-     * preceeding zeros if the result contains less digits than the given amount of digits.
+     * preceding zeros if the result contains less digits than the given amount of digits.
      */
     public static String decimalToBinary(int value, int numOfDigits) {
         value = value & (powersOf2[numOfDigits] - 1);
@@ -134,8 +134,8 @@ public class Conversions {
     }
 
     /**
-     * Returns the hexadeimal string representation of the given int value, adding
-     * preceeding zeros if the result contains less digits than the given amount of digits.
+     * Returns the hexadecimal string representation of the given int value, adding
+     * preceding zeros if the result contains less digits than the given amount of digits.
      */
     public static String decimalToHex(int value, int numOfDigits) {
         value = value & (powersOf16[numOfDigits] - 1);

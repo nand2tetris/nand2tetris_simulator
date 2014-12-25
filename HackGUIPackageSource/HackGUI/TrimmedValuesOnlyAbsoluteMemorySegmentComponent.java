@@ -17,7 +17,6 @@
 
 package HackGUI;
 
-import Hack.*;
 import javax.swing.table.*;
 import javax.swing.*;
 import java.awt.*;
@@ -124,7 +123,7 @@ public class TrimmedValuesOnlyAbsoluteMemorySegmentComponent extends AbsolutePoi
     }
 
 
-    // An inner class which implemets the cell renderer of the ram table, giving
+    // An inner class which implements the cell renderer of the ram table, giving
     // the feature of aligning the text in the cells.
     class TrimmedValuesOnlyTableCellRenderer extends PointedMemorySegmentTableCellRenderer {
 

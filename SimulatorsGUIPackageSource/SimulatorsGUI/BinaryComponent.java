@@ -62,7 +62,7 @@ public class BinaryComponent extends JPanel implements MouseListener, KeyListene
     private ImageIcon okIcon = new ImageIcon(Utilities.imagesDir + "smallok.gif");
     private ImageIcon cancelIcon = new ImageIcon(Utilities.imagesDir + "smallcancel.gif");
 
-    // A vector conatining the listeners to this component.
+    // A vector containing the listeners to this component.
     private Vector listeners;
 
     // A boolean value which is true if the user pressed the ok button and

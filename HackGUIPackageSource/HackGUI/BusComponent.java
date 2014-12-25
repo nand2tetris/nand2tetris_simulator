@@ -26,7 +26,7 @@ import javax.swing.border.*;
 
 public class BusComponent extends JPanel implements ActionListener, BusGUI {
 
-    // Minimum and maximum miliseconds per one unit of movement
+    // Minimum and maximum milliseconds per one unit of movement
     private static final int MIN_MS = 10;
     private static final int MAX_MS = 40;
 
