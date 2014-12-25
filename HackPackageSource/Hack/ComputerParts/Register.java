@@ -17,8 +17,6 @@
 
 package Hack.ComputerParts;
 
-import java.util.EventObject;
-
 /**
  * A computer register. Holds a 16-bit value.
  */

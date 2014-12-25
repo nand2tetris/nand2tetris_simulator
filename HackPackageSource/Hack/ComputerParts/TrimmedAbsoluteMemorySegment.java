@@ -17,8 +17,6 @@
 
 package Hack.ComputerParts;
 
-import Hack.ComputerParts.*;
-
 /**
  * An AbsolutePointedMemorySegment in which the pointer is always set to the address just
  * after the last updated address.

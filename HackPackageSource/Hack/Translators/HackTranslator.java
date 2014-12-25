@@ -23,7 +23,6 @@ import java.util.Hashtable;
 import Hack.ComputerParts.*;
 import java.awt.event.*;
 import java.util.Vector;
-import Hack.Translators.*;
 import Hack.Utilities.*;
 
 /**

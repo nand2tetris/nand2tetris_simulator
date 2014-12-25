@@ -57,6 +57,6 @@ public abstract class HackApplication {
     protected void createController(HackSimulator simulator, ControllerGUI controllerComponent,
                                     String defaultScript)
      throws ScriptException, ControllerException {
-        HackController c = new HackController(controllerComponent, simulator, defaultScript);
+        new HackController(controllerComponent, simulator, defaultScript);
     }
 }

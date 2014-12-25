@@ -17,7 +17,6 @@
 
 package Hack.ComputerParts;
 
-import Hack.ComputerParts.*;
 import java.awt.*;
 
 /**

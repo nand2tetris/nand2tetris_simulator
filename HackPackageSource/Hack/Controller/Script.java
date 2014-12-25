@@ -74,7 +74,6 @@ public class Script {
         boolean whileOpen = false;
 		boolean justOpened = false;
         boolean outputListPrepared = false;
-        int currentCommandIndex = 0;
         Command command = null;
         int lineNumber = 0;
 
