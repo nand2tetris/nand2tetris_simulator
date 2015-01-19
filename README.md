@@ -29,19 +29,19 @@ Directory Structure and Compilation Instructions:
              (to which the compiled code should be copied)
 
  * HackPackageSource - should be compiled and zipped into Hack.jar and
-                    coppied to InstallDir/bin/lib
+                    copied to InstallDir/bin/lib
 
  * HackGUIPackageSource - should be compiled and zipped into HackGUI.jar and
-                       coppied to InstallDir/bin/lib
+                       copied to InstallDir/bin/lib
 
  * CompilersPackageSource - should be compiled and zipped into Compilers.jar and
-                         coppied to InstallDir/bin/lib
+                         copied to InstallDir/bin/lib
 
  * SimulatorsPackageSource - should be compiled and zipped into Simulators.jar and
-                          coppied to InstallDir/bin/lib
+                          copied to InstallDir/bin/lib
 
  * SimulatorsGUIPackageSource - should be compiled and zipped into
-                             SimulatorsGUI.jar and coppied to InstallDir/bin/lib
+                             SimulatorsGUI.jar and copied to InstallDir/bin/lib
 
  * BuiltInChipsSource - should be compiled and copied to InstallDir/builtInChips
 
@@ -75,7 +75,7 @@ BUILTIN ChipName;
 should appear (where ChipName should be substituted for the name of the chip).
 
 In addition to the HDL file for the chip, each chip should be implemented in a
-seprate class named the same as the chip. The compiled implementation should
+separate class named the same as the chip. The compiled implementation should
 reside in the builtInChips package somewhere in the CLASSPATH (for example
 the compiled counterparts of the aforementioned chip provided with the Nand2Tetris 
 Software Suite are located under the InstallDir/builtInChips directory).
@@ -90,7 +90,7 @@ methods (which by default do nothing):
 Required initialization code may be placed in a constructor accepting no
 arguments and any number of data members may be defined.
 
-The code for the chip may access the input and outpu pins via the data members
+The code for the chip may access the input and output pins via the data members
 inputPins and outputPins, respectively.
 
 The value of a b-bit input pin/bus which was declared n-th (starting from zero)
@@ -169,8 +169,8 @@ package somewhere in the CLASSPATH (for example the compiled classes
 implementing the Jack OS supplied in the Nand2Tetris Software Suite are located
 under the InstallDir/builtInVMCode directory).
 
-A Java static method which implements a VM function may communiate with the
-Virual Machine using any of the following static methods which it inherits from
+A Java static method which implements a VM function may communicate with the
+Virtual Machine using any of the following static methods which it inherits from
 Hack.VMEmulator.BuiltInVMClass:
 
 short readMemory(int address) - returns the value stored in the VM
