@@ -304,7 +304,7 @@ public abstract class HackTranslator implements HackTranslatorEventListener, Act
                 gui.getSource().setContents(linesArray);
             }
 
-            destFileName = sourceFileName.substring(0,sourceFileName.indexOf('.')) +
+            destFileName = sourceFileName.substring(0,sourceFileName.lastIndexOf('.')) +
                              "." + getDestinationExtension();
 
             initSource();
